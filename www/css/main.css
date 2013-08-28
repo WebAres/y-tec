@@ -448,6 +448,55 @@ a:visited {
 }
 /* --------------- /portfolio --------------- */
 
+/* --------------- podrazdel2 --------------- */
+.podrazdel2 {
+    font-family: 'Open Sans', sans-serif;
+}
+.podrazdel2 img {
+    float: left;
+    margin-top: 3px;
+    margin-right: 26px;
+}
+.podrazdel2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -1px;
+    margin-bottom: 24px;
+}
+.podrazdel2__title {
+    font-weight: 300;
+    color: #dc1f26;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.podrazdel2 dd.podrazdel2__title {
+    font-weight: 300;
+    color: #dc1f26;
+    font-size: 24px;
+    margin-bottom: 57px;
+}
+.podrazdel2__title:after {
+    display: none;
+}
+.podrazdel2 dd {
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 10px;
+}
+.podrazdel2 dd:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background: #dc1f26;
+}
+/* --------------- /podrazdel2 --------------- */
+
 /* --------------- footer --------------- */
 .footer {
     z-index: 2;
