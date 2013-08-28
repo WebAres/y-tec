@@ -208,12 +208,20 @@ a:visited {
     position: relative;
     display: inline-block;
     vertical-align: top;
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    transition: color .3s ease-in;
 }
 .menu .active{
     margin-top: -10px;
+    cursor: default;
 }
-.menu .active:after,
-.menu a:after {
+.menu a:hover {
+    color: #dc1f26;
+}
+.menu .active:after {
     content: '';
     height: 3px;
     width: 100%;
@@ -222,18 +230,8 @@ a:visited {
     top: -46px;
     left: 0;
 }
-.menu a:after {
-    background: #fff;
-    top: -56px;
-    -webkit-transition: background .3s ease-in;
-    -moz-transition: background .3s ease-in;
-    -o-transition: background .3s ease-in;
-    -ms-transition: background .3s ease-in;
-    transition: background .3s ease-in;
-}
-.menu a:hover:after {
-    background: #d91a21;
-}
+
+
 /* --------------- /menu --------------- */
 
 /* --------------- phone --------------- */
