@@ -2,7 +2,7 @@
 /*
     main styles
     version: 15.01.2013
-    
+
     Style to null
 
     fonts
@@ -16,6 +16,8 @@
     aside-left
 
     content-wrap
+
+    breadcrumbs
 
     footer
 
@@ -167,8 +169,34 @@ a:visited {
 }
 .site__content {
     display: table;
-    width: 100%;
+    width: 1000px;
     margin: 0 auto;
+}
+.site__title {
+    color: #dc1f26;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 37px;
+    font-family: 'Open Sans', sans-serif;
+}
+.site__title > span {
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding-right: 15px;
+}
+.site__title:after {
+    content: '';
+    background: #cfd7de;
+    width: 100%;
+    position: absolute;
+    top: 12px;
+    z-index: 1;
+    left: 0;
+    height: 1px;
 }
 /* --------------- /site --------------- */
 
@@ -208,12 +236,20 @@ a:visited {
     position: relative;
     display: inline-block;
     vertical-align: top;
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    transition: color .3s ease-in;
 }
 .menu .active{
     margin-top: -10px;
+    cursor: default;
 }
-.menu .active:after,
-.menu a:after {
+.menu a:hover {
+    color: #dc1f26;
+}
+.menu .active:after {
     content: '';
     height: 3px;
     width: 100%;
@@ -222,18 +258,8 @@ a:visited {
     top: -46px;
     left: 0;
 }
-.menu a:after {
-    background: #fff;
-    top: -56px;
-    -webkit-transition: background .3s ease-in;
-    -moz-transition: background .3s ease-in;
-    -o-transition: background .3s ease-in;
-    -ms-transition: background .3s ease-in;
-    transition: background .3s ease-in;
-}
-.menu a:hover:after {
-    background: #d91a21;
-}
+
+
 /* --------------- /menu --------------- */
 
 /* --------------- phone --------------- */
@@ -386,11 +412,44 @@ a:visited {
 .content-wrap {
     display: table-cell;
     vertical-align: top;
-    padding-top: 10px;
     padding-left: 68px;
-
 }
 /* --------------- /content-wrap --------------- */
+
+/* --------------- breadcrumbs --------------- */
+.breadcrumbs {
+    cursor: default;
+    height: 23px;
+    padding-top: 20px;
+    margin-bottom: 38px;
+    font-family: 'Open Sans', sans-serif;
+}
+.breadcrumbs a,
+.breadcrumbs a:visited {
+    font-size: 12px;
+    color: #949da5;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-decoration: underline;
+    margin-right: 25px;
+}
+.breadcrumbs a:hover {
+    text-decoration: none;
+}
+.breadcrumbs a:after {
+    position: absolute;
+    content: '>';
+    top: 0;
+    right: -17px;
+}
+.breadcrumbs span {
+    font-size: 12px;
+    color: #949da5;
+    display: inline-block;
+    vertical-align: top;
+}
+/* --------------- /breadcrumbs --------------- */
 
 /* --------------- portfolio --------------- */
 .portfolio {
