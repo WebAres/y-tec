@@ -282,9 +282,7 @@ a:visited {
 .aside-left {
     display: table-cell;
     vertical-align: top;
-    padding-top: 10px;
     width: 228px;
-    background: green;
 }
 /* --------------- /aside-left --------------- */
 
