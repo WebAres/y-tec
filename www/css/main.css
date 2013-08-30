@@ -283,6 +283,7 @@ a:visited {
     display: table-cell;
     vertical-align: top;
     width: 228px;
+    margin-bottom: 50px;
 }
 /* --------------- /aside-left --------------- */
 
@@ -449,17 +450,170 @@ a:visited {
 }
 /* --------------- /breadcrumbs --------------- */
 
-
+/* --------------- page-navigator --------------- */
+.page-navigator {
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 134px;
+}
+.page-navigator div {
+    display: inline-block;
+}
+.page-navigator a,
+.page-navigator a:visited {
+    font-size: 16px;
+    color: #000;
+    display: inline-block;
+    width: 35px;
+    padding: 9px 0;
+    text-align: center;
+}
+.page-navigator a:hover {
+    color: #e13d43;
+    background: #f1f4f7;
+}
+.page-navigator a.first-page,
+li > a.last-page {
+    width: 60px;
+    color: #e13d43;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.page-navigator a.first-page:hover,
+.page-navigator a.last-page:hover {
+    text-decoration: none;
+    background: none;
+}
+.page-navigator span {
+    display: inline-block;
+    width: 33px;
+    padding: 8px 0;
+    background: #f1f4f7;
+    border: 1px solid #b8c1c8;
+}
+/* --------------- /page-navigator --------------- */
 
 /* --------------- footer --------------- */
 .footer {
     z-index: 2;
     position: relative;
     margin-top: -308px;
-}
-.footer__layout {
-    width: 100%;
-    height: 308px;
     background: #1b1d2c url("../img/footer-back.png") no-repeat center top;
 }
+.footer__layout {
+    width: 1000px;
+    height: 308px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer_logo img {
+    display: block;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 167px;
+    height: 107px;
+}
+.footer-navigator {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: absolute;
+    left: 18px;
+    top: 47px;
+}
+.footer-navigator a,
+.footer-navigator a:visited {
+    color: #fff;
+    margin-right: 48px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-navigator a:hover {
+    color: #f1494f;
+}
+.footer__layout a.button_cabinet,
+.footer__layout a.button_back_call {
+    display: inline-block;
+    position: absolute;
+    width: 210px;
+    height: 22px;
+    top: 39px;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    background: #f1494f;
+    border-radius: 3px;
+}
+.footer__layout a.button_back_call {
+    background: #43486c;
+    top: 202px;
+}
+.footer__layout a.button_cabinet:hover {
+    background: #d14348;
+}
+.footer__layout a.button_back_call:hover {
+    background: #343853;
+}
+.copyright {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 113px;
+    left: 228px;
+}
+.copyright span {
+    font-size: 14px;
+    margin-bottom: 23px;
+}
+.footer__layout address {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #fff;
+    position: absolute;
+    top: 152px;
+    left: 228px;
+}
+.footer__layout address dl {
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.footer__layout address dl dt {
+    float: left;
+    clear: both;
+    font-weight: bold;
+    padding-right: 6px;
+}
+.footer__layout address dl dd {
+    float: left;
+}
+.footer__layout address dl dd a {
+    color: #acb3e4;
+    text-decoration: underline;
+}
+.footer__layout address dl dd a:hover {
+    text-decoration: none;
+}
+.footer__layout address dt.e-mail,
+.footer__layout address dd.e-mail {
+    padding-top: 20px;
+}
+.footer__layout address dd.e-mail > a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer__layout address dd.e-mail > a:hover {
+    text-decoration: underline;
+}
+
 /* --------------- /footer --------------- */

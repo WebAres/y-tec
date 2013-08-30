@@ -108,6 +108,8 @@
     color: #fff;
     background: #242021;
     padding: 0 10px;
+    width: 100%;
+    display: inline-block;
 }
 .knowMore:visited{
     color: #fff;
