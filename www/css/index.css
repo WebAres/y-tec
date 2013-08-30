@@ -247,6 +247,7 @@
 .partners{
     width: 1000px;
     margin: 0 auto;
+    margin-bottom: 55px;
 }
 
 .topicType{
@@ -260,4 +261,206 @@
 }
 .topicType span{
     color: #df353b;
+}
+
+
+.ourNews{
+    background: url("../img/blue-back.jpg") no-repeat top center;
+    padding-bottom: 58px;
+}
+.jobsHead{
+    background: url("../img/line.png") no-repeat 208px 17px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.jobsHead h2{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 7px;
+
+}
+.jobsHead a:hover{
+    opacity: 0.8;
+}
+.jobsHead a{
+    float: right;
+    background: #df353b;
+    color: #fff;
+    width: 165px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.newJobs{
+    padding-top: 28px;
+    width: 607px;
+    display: inline-block;
+}
+.ourJobs li{
+    display: inline-block;
+    margin-right: 13px;
+    margin-bottom: 14px;
+    vertical-align: top;
+}
+.ourJobs li img{
+    border: 1px solid #000;
+    display: block;
+}
+.ourJobs{
+    width: 650px;
+}
+.news{
+    width: 294px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 95px;
+    font-family: 'Open Sans', sans-serif;
+}
+.topicType2{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    background: url("../img/line2.png") no-repeat right 105px;
+    text-transform: uppercase;
+    padding: 38px 0 34px 0;
+}
+.news time{
+    display: block;
+    color: #ff6b70;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.news h3{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+.news p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+}
+.news p a{
+    text-decoration: underline;
+    color: #ff6a6f;
+    font-style: italic;
+}
+.news p a:hover{
+    text-decoration: none;
+}
+.news li{
+    margin-bottom: 30px;
+}
+.archive:visited{
+    color: #fff;
+}
+.archive{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 188px;
+    height: 39px;
+    border-radius: 5px;
+    display: block;
+    line-height: 39px;
+    background: #474c6a;
+}
+.teachBlocks li{
+    display: inline-block;
+    position: relative;
+    border: 1px solid #cfd7de;
+    width: 268px;
+    margin-right: 19px;
+    height: 270px;
+    padding: 27px;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+}
+.teachBlocks li:hover{
+    border: 1px solid #f4f7f9;
+    cursor: default;
+}
+.teachBlocks li:hover h3{
+    color: #df353b;
+}
+.teachBlocks li h3{
+    color: #262223;
+    line-height: 20px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.teachBlocks{
+    padding-top: 48px;
+    width: 1037px;
+    margin-bottom: 47px;
+}
+.teachBlocks li p{
+    font-size: 12px;
+    line-height: 21px;
+}
+.teachBlocks li a:hover{
+    text-decoration: none;
+}
+.teachBlocks li a{
+    position: absolute;
+    bottom: 10px;
+    right: 27px;
+    color: #df353b;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.secsuess{
+    background: url("../img/back-red.png") ;
+    padding-top: 22px;
+}
+.topicType3{
+    text-align: center;
+    background: url("../img/topic-back2.png") no-repeat  0 8px;
+    color: #fff;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 47px;
+    font-family: georgia;
+}
+.articles{
+    display: inline-block;
+    width: 329px;
+    vertical-align: top;
+}
+.articles h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+.articlesWrap h4{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+}
+.articlesWrap p{
+    font-size: 12px;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+}
+.articlesWrap a:hover{
+    text-decoration: none;
+}
+.articlesWrap a{
+    color: #df353b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.articlesWrap{
+    margin-bottom: 29px;
 }

@@ -1,4 +1,14 @@
 $( window ).load(function(){
+
+
+    jQuery(".gallery").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev",
+        visible: 1
+    });
+
+
+
     var slider = $( '.ares-slider' );
 
     new AresSlider2( {
