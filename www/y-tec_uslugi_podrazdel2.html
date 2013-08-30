@@ -10,6 +10,7 @@
 
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
 
     <!--[if lte IE 9]>
         <script src="js/jquery.placeholder.js"></script>
@@ -56,11 +57,25 @@
 
                     <!-- submenu -->
                     <nav class="submenu">
-                        <a href="#">Сайты</a>
-                        <span>Баннеры</span>
-                        <a href="#">Продвижение сайтовты</a>
-                        <a href="#">Реклама сайтов</a>
-                        <a href="#">Копирайтинг</a>
+                        <ul>
+                            <li class="active">
+                                <span>Создание сайтов</span>
+                                <div>
+                                    <a href="#">Портфолио</a>
+                                    <a href="#">Цены на создание сайта</a>
+                                    <a href="#">Разработка дизайна</a>
+                                    <a href="#">Сайт под ключ</a>
+                                    <a href="#">Баннеры</a>
+                                    <a href="#">Системы управления</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Реклама сайтов</a>
+                            </li>
+                            <li>
+                                <a href="#">Продвижение сайтов</a>
+                            </li>
+                        </ul>
                     </nav>
                     <!-- /submenu -->
 
@@ -68,9 +83,9 @@
                     <form action="#" class="order" id="order">
                         <h2>Оформить заявку</h2>
                         <fieldset>
-                            <input type="text" id="name" name="name" placeholder="Ваше имя">
-                            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон">
-                            <input type="email" name="mail" id="mail" placeholder="E-mail">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" required>
+                            <input type="email" name="mail" id="mail" placeholder="E-mail" required>
                             <textarea type="text" name="sms" id="sms" placeholder="Если у вас есть комментарии или вопросы, вы можете написать их тут"></textarea>
                         </fieldset>
                         <span>Поля, отмеченные звёздочкой <span>*</span>, обязательны для заполнения</span>

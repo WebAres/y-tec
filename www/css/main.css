@@ -294,20 +294,33 @@ a:visited {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
 }
+.submenu li {
+    border-bottom: 1px solid #dce2e7;
+}
+.submenu li div {
+    display: none;
+}
+.submenu li.active div {
+    display: block;
+}
+.submenu li div a {
+    padding-left: 38px !important;
+}
 .submenu a,
+.submenu a:visited,
 .submenu span {
     display: block;
-    border-bottom: 2px;
-    border-color: #f5f7f8;
-    border-bottom-style: ridge;
-    padding-left: 18px;
-    padding-top: 10px;
-    padding-bottom: 9px;
-}
-.submenu a {
+    padding: 9px 0 11px 18px;
     color: #000;
+    -webkit-transition: color .3s ease-in, background .3s ease-in;
+    -moz-transition: color .3s ease-in, background .3s ease-in;
+    -o-transition: color .3s ease-in, background .3s ease-in;
+    -ms-transition: color .3s ease-in, background .3s ease-in;
+    transition: color .3s ease-in, background .3s ease-in;
+    cursor: pointer;
 }
-.submenu span {
+.submenu a:hover,
+.submenu span:hover {
     background: #dc1f26;
     color: #fff;
     border-color: #d95057;
@@ -330,6 +343,12 @@ a:visited {
     padding-bottom: 20px;
     font-size: 19px;
     font-family: 'Ubuntu', sans-serif;
+}
+.order fieldset {
+    position: relative;
+}
+.order fieldset div {
+    color: #df3b42;
 }
 .order fieldset > input,
 .order fieldset > textarea {
