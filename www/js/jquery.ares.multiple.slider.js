@@ -172,6 +172,5 @@ AresSlider2.prototype = {
             self.active = ( self.active - 1 == -1 )?elems.items.length-1 : self.active - 1;
             self.core.slideToNext();
         }, self.speed );
-
     }
 };

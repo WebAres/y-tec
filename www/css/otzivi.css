@@ -1,6 +1,7 @@
 /* praise */
 .praise {
     position: relative;
+    font-family: 'Open Sans', sans-serif;
 }
 .praise a {
     position: relative;
