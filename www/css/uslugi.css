@@ -1,14 +1,17 @@
 .services{
-    width: 1000px;
+    width: 704px;
     font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
     margin-bottom: 54px;
+    overflow: hidden;
+}
+.services > ul {
+    width: 740px;
 }
 .services > ul > li{
     display: inline-block;
-    width: 230px;
+    width: 229px;
     padding-top: 146px;
-    margin-right: 75px;
+    margin-right: 5px;
     vertical-align: top;
 }
 .services > ul > li:hover h3{
