@@ -53,16 +53,16 @@
 }
 .slogan{
     background: url("../img/back-slogan.jpg");
-    width: 713px;
-    height: 98px;
+    width: 673px;
+    height: 91px;
     margin-bottom: 50px;
     padding: 40px 0 0 31px;
 }
 .slogan h2{
     font-weight: 800;
-    line-height: 30px;
+    line-height: 27px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
+    font-size: 23px;
 }
 .slogan h2 span{
     display: block;
