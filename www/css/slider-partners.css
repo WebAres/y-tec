@@ -72,7 +72,7 @@
 .next{
     position: absolute;
     content: '';
-    background: url("../img/gall-sprite.png") 0 -261px;
+    background: url("../img/red-gall-right.png");
     width: 38px;
     height: 37px;
     top: 50%;
@@ -86,7 +86,7 @@
 .prev{
     position: absolute;
     content: '';
-    background: url("../img/gall-sprite.png")  0 -87px;
+    background: url("../img/red-gall-left.png") ;
     width: 38px;
     height: 37px;
     top: 50%;
