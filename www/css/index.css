@@ -72,9 +72,9 @@
 }
 .services > ul > li{
     display: inline-block;
-    width: 230px;
+    width: 233px;
     padding-top: 146px;
-    margin-right: 75px;
+    margin-right: 72px;
     vertical-align: top;
 }
 .services > ul > li:hover h3{

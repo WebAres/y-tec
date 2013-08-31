@@ -1,7 +1,7 @@
 $(function(){
     new SubMenu( $( '.submenu' ) );
 
-    $( '.order > fieldset > input').each( function(){
+    $( '.order fieldset > input').each( function(){
         new Required( $( this ) );
     } );
 } );
