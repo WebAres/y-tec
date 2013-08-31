@@ -55,6 +55,9 @@
     width: 800px;
     z-index: 2;
 }
+.ares-slider2__item p.black {
+    color: #000;
+}
 .ares-slider2__item span {
     display: block;
 }
