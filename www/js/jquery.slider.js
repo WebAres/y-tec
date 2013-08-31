@@ -1,12 +1,24 @@
-$(function(){
-    var slider = $( '.ares-slider' );
+$( window ).load( function(){
+    var slider = $( '.praise .ares-slider'),
+        slider2 = $( '.ares-slider2' );
 
-    new AresSlider1( {
-        obj: slider,
-        items: slider.find( '.ares-slider__item' ),
-        btnNext: slider.find( '.ares-slider__next' ),
-        btnPrev: slider.find('.ares-slider__prev')
-    } );
+    if( slider.length ){
+        new AresSlider1( {
+            obj: slider,
+            items: slider.find( '.ares-slider__item' ),
+            btnNext: slider.find( '.ares-slider__next' ),
+            btnPrev: slider.find('.ares-slider__prev')
+        } );
+    }
+
+    if( slider2.length ){
+        new AresSlider1( {
+            obj: slider2,
+            items: slider2.find( '.ares-slider2__item' ),
+            btnNext: slider2.find( '.ares-slider2__next' ),
+            btnPrev: slider2.find('.ares-slider2__prev')
+        } );
+    }
 });
 
 var AresSlider1 = function( params ){
@@ -49,6 +61,11 @@ AresSlider1.prototype = {
 
                 elems.points.eq( 0 ).addClass( 'active' );
                 elems.items.eq( 0 ).css( { display: 'block' } );
+                elems.items.each( function(){
+                    var curImg = $( this ).find( 'img' );
+
+                    curImg.css( { marginLeft: -curImg.width() / 2 } );
+                } );
 
                 self.core.controls();
 
