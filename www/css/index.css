@@ -101,11 +101,12 @@
     z-index: 2;
 }
 .ares-slider2__prev {
-    left: 0;
-}
-.ares-slider2__next {
+
     right: 0;
     background-position: right 0;
+}
+.ares-slider2__next {
+    left: 0;
 }
 .ares-slider2__prev:hover,
 .ares-slider2__next:hover {
