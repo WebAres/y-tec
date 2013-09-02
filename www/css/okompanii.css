@@ -28,13 +28,14 @@
 .professionals li {
     display: inline-block;
     vertical-align: top;
-    width: 170px;
-    margin-right: 3px;
+    width: 156px;
+    margin-right: 16px;
     margin-bottom: 10px;
 }
 .professionals li img {
     border: 1px solid #e2e7eb;
     margin-bottom: 20px;
+    width: 100%;
 }
 .professionals li h3 {
     font-size: 14px;

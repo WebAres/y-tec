@@ -70,11 +70,11 @@ var SubMenu = function( obj ){
                         'click': function(){
                             var curItem = $( this ).parent();
 
-                            if( curItem.hasClass( 'active' ) ){
+                            if( curItem.hasClass( 'opened' ) ){
                                 self.hide( curItem );
                             } else {
-                                if( self.obj.find( 'li.active' ).length ){
-                                    self.hide( this.obj.find( 'li.active' ) );
+                                if( self.obj.find( 'li.opened' ).length ){
+                                    self.hide( this.obj.find( 'li.opened' ) );
                                 }
 
                                 self.show( curItem );
@@ -87,7 +87,7 @@ var SubMenu = function( obj ){
         show: function( item ){
             var curItem = item.find( '> div' );
 
-            item.addClass( 'active' );
+            item.addClass( 'opened' );
             curItem.css( {
                 display: 'none'
             } );
@@ -96,7 +96,7 @@ var SubMenu = function( obj ){
         hide: function( item ){
             var curItem = item.find( '> div' );
 
-            item.removeClass( 'active' );
+            item.removeClass( 'opened' );
             curItem.css( {
                 display: 'block'
             } );

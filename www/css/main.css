@@ -301,8 +301,18 @@ a:visited {
 .submenu li div {
     display: none;
 }
-.submenu li.active div {
+.submenu li.opened div {
     display: block;
+}
+.submenu li.active > a,
+.submenu li.active > span,
+.submenu a.active{
+    background: #dc1f26;
+    color: #fff !important;
+    cursor: default;
+}
+.submenu li.active > span {
+    cursor: pointer;
 }
 .submenu li div a {
     padding-left: 38px !important;
@@ -324,7 +334,6 @@ a:visited {
 .submenu span:hover {
     background: #dc1f26;
     color: #fff;
-    border-color: #d95057;
 }
 /* --------------- /submenu --------------- */
 
