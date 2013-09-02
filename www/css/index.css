@@ -111,11 +111,35 @@
 .ares-slider2__next:hover {
     opacity: 1;
 }
+.ares-slider__points {
+    display: inline-block;
+    position: relative;
+    top: 305px;
+    z-index: 4;
+}
+.ares-slider__points li {
+    width: 14px;
+    height: 14px;
+    float: left;
+    background: #1b1d2c;
+    border-radius: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    box-shadow: none;
+    background: #dc1f26;
+    cursor: default;
+}
 .services{
     width: 1000px;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     margin-bottom: 54px;
+    padding-top: 5px;
     background: url("../img/service-line.png") no-repeat 0 57px;
 }
 .services > ul > li{
@@ -147,16 +171,18 @@
     margin-bottom: 29px;
 }
 .services ol li{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .services ol a{
     color: #262223;
     font-size: 14px;
+    display: inline-block;
+    padding: 5px 0;
 }
 .services ol a:hover{
     color: #fff;
     background: #242021;
-    padding: 0 10px;
+    padding: 5px 10px;
     width: 100%;
     display: inline-block;
 }
@@ -220,9 +246,9 @@
     text-decoration: none;
 }
 .reviewComment p a{
-    font-style: normal;
     text-decoration: underline;
     color: #dc1f26;
+    padding-left: 5px;
 }
 .reviewComment{
     margin-bottom: 30px;
@@ -431,16 +457,16 @@
 .teachBlocks li{
     display: inline-block;
     position: relative;
-    border: 1px solid #cfd7de;
+    border: 2px solid #cfd7de;
     width: 268px;
-    margin-right: 19px;
+    margin-right: 17px;
     height: 270px;
     padding: 27px;
     vertical-align: top;
     font-family: 'Open Sans', sans-serif;
 }
 .teachBlocks li:hover{
-    border: 1px solid #f4f7f9;
+    border: 2px solid #f4f7f9;
     cursor: default;
 }
 .teachBlocks li:hover h3{
@@ -468,7 +494,7 @@
 }
 .teachBlocks li a{
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 27px;
     color: #df353b;
     text-decoration: underline;
@@ -525,4 +551,10 @@
 .whiteBlock{
     padding-top: 43px;
     margin-bottom: 51px;
+}
+
+.whiteBlock .reviewComment p{
+    font-style: normal;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
 }

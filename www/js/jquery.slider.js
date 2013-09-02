@@ -58,6 +58,7 @@ AresSlider1.prototype = {
 
                 elems.points = points.find( 'li' );
 
+                points.css( { left: ( 1000 - points.width() ) / 2 } );
 
                 elems.points.eq( 0 ).addClass( 'active' );
                 elems.items.eq( 0 ).css( { display: 'block' } );
