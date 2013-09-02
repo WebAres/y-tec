@@ -263,7 +263,7 @@
     vertical-align: top;
 }
 .orderWrap{
-    background: #fff;
+    background: #fff url("../img/line3.png") no-repeat 22px 446px;
     padding: 20px 0 1px 0;
     border-bottom: 1px solid #e3e9eb;
 }
